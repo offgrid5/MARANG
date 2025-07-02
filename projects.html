@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+   <link href="images/icon.png" rel="icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.2/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.2/bootstrap-icons.svg">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/css/glightbox.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.0.1/remixicon.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" type="text/css" href="style/style.css">
+	<title>PROJECTS | LTC ENGINEERING (PTY) LTD</title>
+</head>
+<body>
+
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <a href="index.html" class="logo"><img src="images/emblem.jpg" alt="" class="img-fluid"></a>
+
+
+      <nav id="navbar" class="navbar order-last order-lg-0 ms-auto">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contacts.html">Contacts</a></li>
+          <li><a href="careers.html">Careers</a></li>
+
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+      <div class="color-palette">
+		    <div class="color1"></div>
+		    <div class="color2"></div>
+		    <div class="color3"></div>
+		    <div class="color4"></div>
+		    <div class="color5"></div>
+  </div>
+    </div>
+
+  </header>
+
+      <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Projects</h2>
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li>Projects</li>
+          </ol>
+        </div>
+
+      </div>
+</section><!-- End Breadcrumbs -->
+<!---------------------------------------------------------------------------------------------------------------------------
+
+  PROJECTS
+
+---------------------------------------------------------------------------------------------------------------------------->
+
+<div class="container">
+
+  <!-- Featured Projects Section -->
+    <section class="featured-section">
+      <div class="section-title-container">
+                <h2 class="section-title">Our Projects</h2>
+            </div>
+        <div class="featured-projects" id="projectsContainer">
+            <!-- Project cards will be inserted here by JavaScript -->
+        </div>
+        
+        <!-- Pagination -->
+        <div class="pagination-container">
+            <nav>
+                <ul class="pagination" id="pagination">
+                    <!-- Pagination buttons will be inserted here by JavaScript -->
+                </ul>
+            </nav>
+        </div>
+        
+        <div class="page-info">
+            Page <span id="currentPage">1</span> of <span id="totalPages">4</span>
+        </div>
+    </section>
+</div>
+
+    <section class="ltc-industries-section">
+        <div class="ltc-container">
+            <div class="ltc-section-header">
+                <h2 class="ltc-section-title">Industries We Serve</h2>
+                <p class="ltc-section-subtitle">
+                    LTC provides specialized components and solutions across diverse industries, 
+                    delivering high-quality products tailored to meet the unique demands of each sector.
+                </p>
+            </div>
+            
+            <div class="ltc-industries-grid">
+                <!-- Industry 1: Healthcare -->
+                <div class="ltc-industry-card">
+                    <div class="ltc-industry-image">
+                        <img src="https://placehold.co/600x400.png" alt="Healthcare Industry">
+                    </div>
+                    <div class="ltc-industry-content">
+                        <div class="ltc-industry-icon">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <h3 class="ltc-industry-title">Healthcare</h3>
+                        <p class="ltc-industry-description">
+                            Precision components for medical devices, diagnostic equipment, and healthcare systems. 
+                            Our products meet stringent medical standards for reliability and safety.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Industry 2: Industrial Automation -->
+                <div class="ltc-industry-card">
+                    <div class="ltc-industry-image">
+                        <img src="https://placehold.co/600x400.png" alt="Industrial Automation">
+                    </div>
+                    <div class="ltc-industry-content">
+                        <div class="ltc-industry-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                        <h3 class="ltc-industry-title">Industrial Automation</h3>
+                        <p class="ltc-industry-description">
+                            Robust components for automation systems, robotics, and manufacturing equipment. 
+                            Designed for durability in demanding industrial environments.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Industry 3: Telecommunications -->
+                <div class="ltc-industry-card">
+                    <div class="ltc-industry-image">
+                        <img src="https://placehold.co/600x400.png" alt="Telecommunications">
+                    </div>
+                    <div class="ltc-industry-content">
+                        <div class="ltc-industry-icon">
+                            <i class="fas fa-satellite-dish"></i>
+                        </div>
+                        <h3 class="ltc-industry-title">Telecommunications</h3>
+                        <p class="ltc-industry-description">
+                            High-frequency components for networking equipment, 5G infrastructure, and communication systems. 
+                            Engineered for performance and signal integrity.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Industry 4: Automotive -->
+                <div class="ltc-industry-card">
+                    <div class="ltc-industry-image">
+                        <img src="https://placehold.co/600x400.png" alt="Automotive Industry">
+                    </div>
+                    <div class="ltc-industry-content">
+                        <div class="ltc-industry-icon">
+                            <i class="fas fa-car"></i>
+                        </div>
+                        <h3 class="ltc-industry-title">Automotive</h3>
+                        <p class="ltc-industry-description">
+                            Components for electric vehicles, ADAS systems, and automotive electronics. 
+                            Meeting automotive-grade quality and reliability standards.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Industry 5: Aerospace & Defense -->
+                <div class="ltc-industry-card">
+                    <div class="ltc-industry-image">
+                        <img src="https://placehold.co/600x400.png" alt="Aerospace & Defense">
+                    </div>
+                    <div class="ltc-industry-content">
+                        <div class="ltc-industry-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3 class="ltc-industry-title">Aerospace & Defense</h3>
+                        <p class="ltc-industry-description">
+                            Mission-critical components for aviation, space systems, and defense applications. 
+                            Manufactured to withstand extreme conditions and rigorous standards.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Industry 6: Consumer Electronics -->
+                <div class="ltc-industry-card">
+                    <div class="ltc-industry-image">
+                        <img src="https://placehold.co/600x400.png" alt="Consumer Electronics">
+                    </div>
+                    <div class="ltc-industry-content">
+                        <div class="ltc-industry-icon">
+                            <i class="fas fa-laptop"></i>
+                        </div>
+                        <h3 class="ltc-industry-title">Consumer Electronics</h3>
+                        <p class="ltc-industry-description">
+                            Components for smartphones, wearables, home appliances, and entertainment systems. 
+                            Focused on miniaturization, efficiency, and cost-effectiveness.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!---------------------------------------------------------------------------------------------------------------------------
+
+  FOOTER
+
+----------------------------------------------------------------------------------------------------------------------------->
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="row gy-3">
+
+        <div class="col-lg-3 col-md-6 footer-links d-flex">
+          <i class="bi bi-tools icon"></i>
+          <div>
+            <h4>Services</h4>
+            <ul>
+            	<li><a href="">Electrical Installations</a></li>
+            	<li><a href="">High Voltage Reticulation</a></li>
+            	<li><a href="">PhotoVoltaic Systems</a></li>
+            	<li><a href="">Security Systems</a></li>
+            	<li><a href="">Airfield Lighting</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links d-flex">
+          <i class="bi bi-patch-check icon"></i>
+          <div>
+            <h4>Company Info.</h4>
+            <ul>
+            	<li><a href="about.html">About Us</a></li>
+            	<li><a href="">Mission & Vision</a></li>
+              	<li><a href="">Our team</a></li>
+              	<li><a href="">Equipment & Capabilities</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links d-flex">
+          <i class="bi bi-telephone icon"></i>
+          <div>
+            <h4>Contact & Legal</h4>
+            <ul>
+            	<li><a href="">Contact Us</a></li>
+            	<li><a href="">Careers</a></li>
+            	<li><a href="">Terms & Conditions</a></li>
+            	<li><a href="">Privacy Policy</a></li>
+            	<li><a href="">Sitemap</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Follow Us</h4>
+          <div class="social-links d-flex">
+            <a href="#" class="twitter"><i class="bi bi-tiktok"></i></a>
+            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>LTC Engineering - Pty Ltd</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        A Cloudwise <a href="https://facebook.com/cloudwise777">Solution</a>
+      </div>
+    </div>
+
+  </footer>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/dist/boxicons.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/js/glightbox.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="js/main.js"></script>
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', function() {
+            // Configuration
+            const projectsPerPage = 6;
+            let currentPage = 1;
+            
+            // Project data (24 projects)
+            const projects = [
+                {
+                    id: 1,
+                    title: "Gaborone Highway Expansion",
+                    description: "Expansion of the A1 highway to 6 lanes with improved drainage systems",
+                    status: "completed",
+                    budget: 12500000,
+                    location: "Gaborone, Southern Region",
+                    duration: "Jan 2024 - Jun 2024",
+                    value: "BWP 12.5 Million",
+                    image: "https://placehold.co/600x400.png",
+                    services: ["Road Construction", "Drainage Systems", "Safety Engineering"]
+                },
+                {
+                    id: 2,
+                    title: "Maitlamo Tech Park",
+                    description: "Development of a technology innovation hub with modern infrastructure",
+                    status: "ongoing",
+                    budget: 48200000,
+                    location: "Gaborone, Southern Region",
+                    duration: "Mar 2024 - Dec 2025",
+                    value: "BWP 48.2 Million",
+                    image: "https://placehold.co/600x400.png",
+                    services: ["Structural Engineering", "Electrical Systems", "Project Management"]
+                },
+                {
+                    id: 3,
+                    title: "Letsibogo Dam Maintenance",
+                    description: "Structural integrity assessment and maintenance of dam infrastructure",
+                    status: "completed",
+                    budget: 8700000,
+                    location: "Mmadinare, Central Region",
+                    duration: "Sep 2023 - Feb 2024",
+                    value: "BWP 8.7 Million",
+                    image: "https://placehold.co/600x400.png",
+                    services: ["Civil Engineering", "Hydraulic Systems", "Safety Inspection"]
+                },
+                {
+                    id: 4,
+                    title: "Mogoditshane Housing Project",
+                    description: "Development of affordable residential units with infrastructure",
+                    status: "suspended",
+                    budget: 32100000,
+                    location: "Mogoditshane, Southern Region",
+                    duration: "Oct 2023 - Present",
+                    value: "BWP 32.1 Million",
+                    image: "https://placehold.co/600x400.png",
+                    services: ["Urban Planning", "Infrastructure", "Residential Design"]
+                },
+                {
+                    id: 5,
+                    title: "Sir Seretse Khama Airport Upgrade",
+                    description: "Terminal expansion and runway enhancement project",
+                    status: "ongoing",
+                    budget: 120400000,
+                    location: "Gaborone, Southern Region",
+                    duration: "Jan 2024 - Jun 2025",
+                    value: "BWP 120.4 Million",
+                    image: "https://placehold.co/600x400.png",
+                    services: ["Structural Engineering", "Aviation Infrastructure", "Project Management"]
+                },
+                {
+                    id: 6,
+                    title: "Solar Power Plant Installation",
+                    description: "10MW solar energy facility with grid connection infrastructure",
+                    status: "completed",
+                    budget: 65300000,
+                    location: "Jwaneng, Southern Region",
+                    duration: "Jul 2023 - Dec 2023",
+                    value: "BWP 65.3 Million",
+                    image: "https://placehold.co/600x400.png",
+                    services: ["Renewable Energy", "Electrical Engineering", "Grid Integration"]
+                },
+                {
+                    id: 7,
+                    title: "Orapa Hospital Renovation",
+                    description: "Modernization of healthcare facility with new wing addition",
+                    status: "ongoing",
+                    budget: 28700000,
+                    location: "Orapa, Central Region",
+                    duration: "Feb 2024 - Nov 2024",
+                    value: "BWP 28.7 Million",
+                    image: "https://placehold.co/600x400.png",
+                    services: ["Healthcare Facilities", "Renovation", "MEP Engineering"]
+                },
+                {
+                    id: 8,
+                    title: "Kazungula Bridge Construction",
+                    description: "International bridge connecting Botswana and Zambia",
+                    status: "completed",
+                    budget: 259000000,
+                    location: "Kazungula, Northern Region",
+                    duration: "Jan 2018 - May 2021",
+                    value: "BWP 259 Million",
+                    image: "https://placehold.co/600x400.png",
+                    services: ["Bridge Construction", "International Coordination", "Structural Engineering"]
+                },
+                {
+                    id: 9,
+                    title: "Industrial Processing Facility",
+                    description: "New manufacturing plant for agricultural processing",
+                    status: "ongoing",
+                    budget: 187000000,
+                    location: "Selibe Phikwe, Central Region",
+                    duration: "Aug 2023 - Dec 2025",
+                    value: "BWP 187 Million",
+                    image: "https://placehold.co/600x400.png",
+                    services: ["Industrial Design", "Process Engineering", "Facility Construction"]
+                },
+                {
+                    id: 10,
+                    title: "CBD Commercial Tower",
+                    description: "25-story commercial building in central business district",
+                    status: "completed",
+                    budget: 320000000,
+                    location: "Gaborone, Southern Region",
+                    duration: "Jan 2022 - Dec 2023",
+                    value: "BWP 320 Million",
+                    image: "https://placehold.co/600x400.png",
+                    services: ["Commercial Construction", "Structural Engineering", "MEP Systems"]
+                },
+                {
+                    id: 11,
+                    title: "Water Treatment Plant Upgrade",
+                    description: "Modernization of water purification and distribution system",
+                    status: "completed",
+                    budget: 45000000,
+                    location: "Palapye, Central Region",
+                    duration: "Mar 2023 - Feb 2024",
+                    value: "BWP 45 Million",
+                    image: "https://placehold.co/600x400.png",
+                    services: ["Water Treatment", "Pipeline Systems", "Process Engineering"]
+                },
+                {
+                    id: 12,
+                    title: "Railway Infrastructure Modernization",
+                    description: "Upgrade of railway tracks and signaling systems",
+                    status: "ongoing",
+                    budget: 185000000,
+                    location: "Lobatse to Francistown Corridor",
+                    duration: "Jan 2024 - Dec 2026",
+                    value: "BWP 185 Million",
+                    image: "https://placehold.co/600x400.png",
+                    services: ["Rail Engineering", "Infrastructure Upgrade", "Safety Systems"]
+                },
+                {
+                    id: 13,
+                    title: "Rural Electrification Project",
+                    description: "Expansion of electrical grid to remote villages",
+                    status: "ongoing",
+                    budget: 78000000,
+                    location: "Kgalagadi District",
+                    duration: "Jul 2023 - Jun 2025",
+                    value: "BWP 78 Million",
+                    image: "https://placehold.co/600x400.png",
+                    services: ["Electrical Grid", "Renewable Energy", "Rural Development"]
+                },
+                {
+                    id: 14,
+                    title: "University Science Complex",
+                    description: "New research and teaching facility for STEM education",
+                    status: "completed",
+                    budget: 145000000,
+                    location: "Gaborone, Southern Region",
+                    duration: "Jan 2022 - Dec 2023",
+                    value: "BWP 145 Million",
+                    image: "https://placehold.co/600x400.png",
+                    services: ["Educational Facilities", "Laboratory Design", "Sustainable Construction"]
+                },
+                {
+                    id: 15,
+                    title: "Mining Infrastructure Upgrade",
+                    description: "Modernization of mining operations and safety systems",
+                    status: "ongoing",
+                    budget: 210000000,
+                    location: "Orapa, Central Region",
+                    duration: "Mar 2024 - Feb 2026",
+                    value: "BWP 210 Million",
+                    image: "https://placehold.co/600x400.png",
+                    services: ["Mining Engineering", "Safety Systems", "Process Optimization"]
+                },
+                {
+                    id: 16,
+                    title: "Tourism Resort Development",
+                    description: "Eco-friendly resort in the Okavango Delta",
+                    status: "ongoing",
+                    budget: 95000000,
+                    location: "Okavango Delta, Northern Region",
+                    duration: "Jan 2024 - Dec 2025",
+                    value: "BWP 95 Million",
+                    image: "https://placehold.co/600x400.png",
+                    services: ["Eco-Construction", "Tourism Development", "Sustainable Design"]
+                },
+                {
+                    id: 17,
+                    title: "Urban Road Network Improvement",
+                    description: "Revitalization of city road infrastructure",
+                    status: "completed",
+                    budget: 68000000,
+                    location: "Francistown, Southern Region",
+                    duration: "Sep 2022 - Aug 2023",
+                    value: "BWP 68 Million",
+                    image: "https://placehold.co/600x400.png",
+                    services: ["Urban Planning", "Road Construction", "Traffic Management"]
+                },
+                {
+                    id: 18,
+                    title: "Agricultural Irrigation System",
+                    description: "Large-scale irrigation project for farming communities",
+                    status: "ongoing",
+                    budget: 56000000,
+                    location: "Mahalapye, Central Region",
+                    duration: "Feb 2024 - Jan 2026",
+                    value: "BWP 56 Million",
+                    image: "https://placehold.co/600x400.png",
+                    services: ["Agricultural Engineering", "Water Management", "Irrigation Systems"]
+                },
+                {
+                    id: 19,
+                    title: "National Stadium Renovation",
+                    description: "Upgrade of sports facilities and seating infrastructure",
+                    status: "completed",
+                    budget: 98000000,
+                    location: "Gaborone, Southern Region",
+                    duration: "Mar 2023 - Feb 2024",
+                    value: "BWP 98 Million",
+                    image: "https://placehold.co/600x400.png",
+                    services: ["Sports Facilities", "Structural Renovation", "Safety Compliance"]
+                },
+                {
+                    id: 20,
+                    title: "Digital Infrastructure Expansion",
+                    description: "Nationwide broadband network deployment",
+                    status: "ongoing",
+                    budget: 220000000,
+                    location: "Nationwide",
+                    duration: "Jan 2024 - Dec 2026",
+                    value: "BWP 220 Million",
+                    image: "https://placehold.co/600x400.png",
+                    services: ["Telecommunications", "Network Infrastructure", "Digital Transformation"]
+                },
+                {
+                    id: 21,
+                    title: "Waste Management Facility",
+                    description: "Modern recycling and waste processing plant",
+                    status: "completed",
+                    budget: 45000000,
+                    location: "Francistown, Southern Region",
+                    duration: "Jun 2023 - May 2024",
+                    value: "BWP 45 Million",
+                    image: "https://placehold.co/600x400.png",
+                    services: ["Environmental Engineering", "Waste Processing", "Sustainable Design"]
+                },
+                {
+                    id: 22,
+                    title: "Regional Hospital Construction",
+                    description: "New healthcare facility with 300-bed capacity",
+                    status: "ongoing",
+                    budget: 320000000,
+                    location: "Maun, Northern Region",
+                    duration: "Mar 2024 - Dec 2026",
+                    value: "BWP 320 Million",
+                    image: "https://placehold.co/600x400.png",
+                    services: ["Healthcare Construction", "Facility Design", "Medical Infrastructure"]
+                },
+                {
+                    id: 23,
+                    title: "Wind Farm Development",
+                    description: "50MW renewable energy facility in the Kalahari",
+                    status: "suspended",
+                    budget: 185000000,
+                    location: "Kgalagadi District",
+                    duration: "TBD",
+                    value: "BWP 185 Million",
+                    image: "https://placehold.co/600x400.png",
+                    services: ["Renewable Energy", "Wind Turbines", "Grid Integration"]
+                },
+                {
+                    id: 24,
+                    title: "Shopping Mall Complex",
+                    description: "Modern retail center with entertainment facilities",
+                    status: "completed",
+                    budget: 150000000,
+                    location: "Francistown, Southern Region",
+                    duration: "Jan 2023 - Dec 2023",
+                    value: "BWP 150 Million",
+                    image: "https://placehold.co/600x400.png",
+                    services: ["Commercial Construction", "Retail Design", "Entertainment Facilities"]
+                }
+            ];
+            
+            // DOM elements
+            const projectsContainer = document.getElementById('projectsContainer');
+            const paginationContainer = document.getElementById('pagination');
+            const currentPageSpan = document.getElementById('currentPage');
+            const totalPagesSpan = document.getElementById('totalPages');
+            
+            // Calculate total pages
+            const totalPages = Math.ceil(projects.length / projectsPerPage);
+            totalPagesSpan.textContent = totalPages;
+            
+            // Function to render projects for current page
+            function renderProjects() {
+                projectsContainer.innerHTML = '';
+                
+                // Calculate start and end index
+                const startIndex = (currentPage - 1) * projectsPerPage;
+                const endIndex = Math.min(startIndex + projectsPerPage, projects.length);
+                const pageProjects = projects.slice(startIndex, endIndex);
+                
+                // Create project cards
+                pageProjects.forEach(project => {
+                    // Determine badge class based on status
+                    let badgeClass, badgeText;
+                    switch(project.status) {
+                        case "ongoing":
+                            badgeClass = "badge-warning";
+                            badgeText = "Ongoing";
+                            break;
+                        case "completed":
+                            badgeClass = "badge-success";
+                            badgeText = "Completed";
+                            break;
+                        case "suspended":
+                            badgeClass = "badge-secondary";
+                            badgeText = "Suspended";
+                            break;
+                        default:
+                            badgeClass = "badge-info";
+                            badgeText = "Planning";
+                    }
+                    
+                    // Create services badges
+                    const servicesHTML = project.services.map(service => 
+                        `<span class="badge specs-badge">${service}</span>`
+                    ).join('');
+                    
+                    const cardHTML = `
+                        <div class="project-card">
+                            <div class="card-image" style="background-image: url('${project.image}');"></div>
+                            <div class="card-body">
+                                <span class="badge ${badgeClass} project-badge">${badgeText}</span>
+                                <h3 class="project-title">${project.title}</h3>
+                                <p class="card-text">${project.description}</p>
+                                
+                                <div class="project-detail">
+                                    <i class="bi bi-geo-alt"></i> <strong>Location:</strong> ${project.location}
+                                </div>
+                                <div class="project-detail">
+                                    <i class="bi bi-calendar"></i> <strong>Duration:</strong> ${project.duration}
+                                </div>
+                                <div class="project-detail">
+                                    <i class="bi bi-cash"></i> <strong>Value:</strong> ${project.value}
+                                </div>
+                                
+                                <div class="mt-2 mb-2">
+                                    ${servicesHTML}
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                    
+                    projectsContainer.innerHTML += cardHTML;
+                });
+                
+                // Update current page display
+                currentPageSpan.textContent = currentPage;
+            }
+            
+            // Function to render pagination controls
+            function renderPagination() {
+                paginationContainer.innerHTML = '';
+                
+                // Previous button
+                let prevClass = currentPage === 1 ? 'disabled' : '';
+                paginationContainer.innerHTML += `
+                    <li class="page-item ${prevClass}">
+                        <a class="page-link" href="#" data-page="${currentPage - 1}">
+                            <i class="bi bi-chevron-left"></i>
+                        </a>
+                    </li>
+                `;
+                
+                // Page numbers
+                for (let i = 1; i <= totalPages; i++) {
+                    let activeClass = i === currentPage ? 'active' : '';
+                    paginationContainer.innerHTML += `
+                        <li class="page-item ${activeClass}">
+                            <a class="page-link" href="#" data-page="${i}">${i}</a>
+                        </li>
+                    `;
+                }
+                
+                // Next button
+                let nextClass = currentPage === totalPages ? 'disabled' : '';
+                paginationContainer.innerHTML += `
+                    <li class="page-item ${nextClass}">
+                        <a class="page-link" href="#" data-page="${currentPage + 1}">
+                            <i class="bi bi-chevron-right"></i>
+                        </a>
+                    </li>
+                `;
+                
+                // Add event listeners to pagination links
+                document.querySelectorAll('.page-link').forEach(link => {
+                    link.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        const page = parseInt(this.dataset.page);
+                        if (!isNaN(page)) {
+                            currentPage = page;
+                            renderProjects();
+                            renderPagination();
+                            window.scrollTo({ top: 0, behavior: 'smooth' });
+                        }
+                    });
+                });
+            }
+            
+            // Initial render
+            renderProjects();
+            renderPagination();
+        });
+</script>
+</body>
+</html>

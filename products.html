@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+   <link href="images/icon.png" rel="icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.2/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.2/bootstrap-icons.svg">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/css/boxicons.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/css/glightbox.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.0.1/remixicon.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" type="text/css" href="style/style.css">
+  <link rel="stylesheet" type="text/css" href="style/prod.css">
+	<title>PRODUCTS | LTC ENGINEERING (PTY) LTD</title>
+</head>
+<body>
+
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <a href="index.html" class="logo"><img src="images/emblem.jpg" alt="" class="img-fluid"></a>
+
+
+      <nav id="navbar" class="navbar order-last order-lg-0 ms-auto">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contacts.html">Contacts</a></li>
+          <li><a href="careers.html">Careers</a></li>
+
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+      <div class="color-palette">
+		    <div class="color1"></div>
+		    <div class="color2"></div>
+		    <div class="color3"></div>
+		    <div class="color4"></div>
+		    <div class="color5"></div>
+  </div>
+    </div>
+  </header>
+
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Products</h2>
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li>Products</li>
+          </ol>
+        </div>
+
+      </div>
+</section><!-- End Breadcrumbs -->
+
+  <section id="product-catalogue">
+  	<div class="">
+        <div class="section-title-container">
+                <h2 class="section-title">Our Product Catalogue</h2>
+            </div>
+            
+    <div id="container">
+
+    <div class="cart-indicator" id="cartIndicator" data-bs-toggle="modal" data-bs-target="#cartModal">
+        <i class="bi bi-cart"></i>
+        <span class="cart-count" id="cartCount">0</span>
+    </div>
+    
+    <div class="project-container">
+        <!-- Filter Sidebar -->
+        <aside class="filter-sidebar">
+            <button class="close-sidebar">&times;</button>
+            <h4 class="mb-4"><i class="bi bi-funnel"></i> Filter Equipment</h4>
+            
+            <!-- Equipment Type Filter -->
+            <div class="filter-section">
+                <h5><i class="bi bi-grid"></i> Equipment Type</h5>
+                <div class="filter-option">
+                    <input type="checkbox" class="form-check-input" id="solarCheck" checked data-filter="type" value="solar">
+                    <label for="solarCheck">Solar Products</label>
+                </div>
+                <div class="filter-option">
+                    <input type="checkbox" class="form-check-input" id="generatorsCheck" data-filter="type" value="generator">
+                    <label for="generatorsCheck">Generators</label>
+                </div>
+                <div class="filter-option">
+                    <input type="checkbox" class="form-check-input" id="constructionCheck" data-filter="type" value="construction">
+                    <label for="constructionCheck">Construction Equipment</label>
+                </div>
+                <div class="filter-option">
+                    <input type="checkbox" class="form-check-input" id="miningCheck" data-filter="type" value="mining">
+                    <label for="miningCheck">Mining Machinery</label>
+                </div>
+                <div class="filter-option">
+                    <input type="checkbox" class="form-check-input" id="agriculturalCheck" data-filter="type" value="agricultural">
+                    <label for="agriculturalCheck">Agricultural Machinery</label>
+                </div>
+            </div>
+            
+            <!-- Condition Filter -->
+            <div class="filter-section">
+                <h5><i class="bi bi-clipboard-check"></i> Condition</h5>
+                <div class="filter-option">
+                    <input type="checkbox" class="form-check-input" id="newCheck" data-filter="condition" value="new">
+                    <label for="newCheck">New</label>
+                </div>
+                <div class="filter-option">
+                    <input type="checkbox" class="form-check-input" id="usedCheck" data-filter="condition" value="used">
+                    <label for="usedCheck">Used</label>
+                </div>
+                <div class="filter-option">
+                    <input type="checkbox" class="form-check-input" id="refurbishedCheck" data-filter="condition" value="refurbished">
+                    <label for="refurbishedCheck">Refurbished</label>
+                </div>
+            </div>
+            
+            <!-- Power Range -->
+            <div class="filter-section">
+                <h5><i class="bi bi-lightning"></i> Power Range (kW)</h5>
+                <input type="range" class="form-range" min="0" max="1000" value="1000" id="powerRange">
+                <div class="d-flex justify-content-between">
+                    <small id="minPower">0 kW</small>
+                    <small id="maxPower">1000 kW</small>
+                </div>
+            </div>
+            
+            <!-- Price Range -->
+            <div class="filter-section">
+                <h5><i class="bi bi-currency-exchange"></i> Price Range (BWP)</h5>
+                <input type="range" class="form-range" min="0" max="5000000" value="5000000" id="priceRange">
+                <div class="d-flex justify-content-between">
+                    <small id="minPrice">0</small>
+                    <small id="maxPrice">5M+</small>
+                </div>
+            </div>
+            
+            <!-- Reset & Apply Buttons -->
+            <div class="d-grid gap-2 mt-4">
+                <button class="btn btn-solar" id="applyFilters">Apply Filters</button>
+                <button class="btn btn-outline-secondary" id="resetFilters">Reset Filters</button>
+            </div>
+        </aside>
+        
+        <!-- Projects Area -->
+        <main class="projects-area">
+            <div class="controls-row">
+                <div class="d-flex justify-content-between align-items-center flex-wrap">
+                    <div class="filter-results">
+                        Showing <span id="resultCount">0</span> of <span id="totalProjects">0</span> equipment items
+                    </div>
+                    <div class="d-flex mt-2 mt-md-0">
+                        <div class="input-group me-2" style="width: 250px;">
+                            <input type="text" class="form-control" id="searchInput" placeholder="Search equipment...">
+                            <button class="btn btn-outline-secondary-search" type="button" id="searchButton">
+                                <i class="bi bi-search"></i>
+                            </button>
+                        </div>
+                        
+                        <button class="btn btn-outline-secondary d-md-none" id="mobileFilterToggle">
+                            <i class="bi bi-funnel"></i> Filters
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="projects-grid" id="projectsContainer">
+                <!-- Equipment cards will be inserted here by JavaScript -->
+            </div>
+            
+            <!-- Pagination Container -->
+            <div class="pagination-container">
+                <ul class="pagination" id="pagination"></ul>
+            </div>
+            <div class="pagination-info">
+                Showing page <span id="currentPage">1</span> of <span id="totalPages">1</span>
+            </div>
+        </main>
+        
+        <div class="overlay" id="overlay"></div>
+    </div>
+    
+    <!-- Toast Notification -->
+    <div class="toast-container" id="toastContainer"></div>
+    
+    <!-- Product Modal -->
+    <div class="modal fade" id="productModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitle">Product Details</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="modalBody">
+                    <!-- Content will be inserted by JavaScript -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-solar" id="modalAddToCart">Add to Basket</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Cart Modal -->
+    <div class="modal fade" id="cartModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title">Your Basket</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="cartItems">
+                        <!-- Cart items will be inserted here -->
+                    </div>
+                    <div class="d-flex justify-content-between mt-3 fw-bold">
+                        <span>Total:</span>
+                        <span id="cartTotal">BWP 0</span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Continue Shopping</button>
+                    <button type="button" class="btn btn-success">Finalize RFQ</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+        
+    </div>
+  	
+  </section>
+
+  <section class="rfq-section-container">
+        <div class="rfq-section-wrapper">
+            <div class="rfq-explanation-section">
+                <h2 class="rfq-section-title">Request for Quote Service</h2>
+                <p class="rfq-explanation-text">
+                    Our RFQ service streamlines the procurement process, allowing you to quickly get customized quotes for the products you need. Instead of traditional purchasing, request quotes for selected items to receive competitive pricing and personalized service.
+                </p>
+                
+                <h3 class="rfq-benefits-title">Key Benefits</h3>
+                <ul class="rfq-benefits-list">
+                    <li>Receive competitive pricing tailored to your order volume</li>
+                    <li>Get personalized support from our product specialists</li>
+                    <li>Access custom configurations and bulk discounts</li>
+                    <li>Simplify procurement with consolidated quotes</li>
+                    <li>Fast response time - quotes within 24 business hours</li>
+                    <li>No obligation to purchase after receiving a quote</li>
+                </ul>
+            </div>
+            
+            <div class="rfq-steps-section">
+                <h2 class="rfq-section-title">How It Works</h2>
+                <div class="rfq-steps-container">
+                    <div class="rfq-step-item">
+                        <div class="rfq-step-number">1</div>
+                        <div class="rfq-step-content">
+                            <h3>Browse Our Catalog</h3>
+                            <p>Use the search functionality and sidebar filters to find products that meet your requirements. Open product modals to view detailed specifications.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="rfq-step-item">
+                        <div class="rfq-step-number">2</div>
+                        <div class="rfq-step-content">
+                            <h3>Select Products</h3>
+                            <p>Add desired products to your RFQ basket by clicking the basket icon. You can select multiple products from different categories.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="rfq-step-item">
+                        <div class="rfq-step-number">3</div>
+                        <div class="rfq-step-content">
+                            <h3>Review Your Selection</h3>
+                            <p>Access your RFQ basket to review selected items. You can adjust quantities or remove products before finalizing.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="rfq-step-item">
+                        <div class="rfq-step-number">4</div>
+                        <div class="rfq-step-content">
+                            <h3>Finalize Your RFQ</h3>
+                            <p>Click the "Finalize RFQ" button when ready. You'll be prompted to provide contact information and any special requirements.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="rfq-step-item">
+                        <div class="rfq-step-number">5</div>
+                        <div class="rfq-step-content">
+                            <h3>Receive Your Quote</h3>
+                            <p>Our team will prepare a comprehensive quote and contact you within 24 business hours with competitive pricing and delivery options.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="row gy-3">
+        <div class="col-lg-3 col-md-6 footer-links d-flex">
+          <i class="bi bi-tools icon"></i>
+          <div>
+            <h4>Services</h4>
+            <ul>
+            	<li><a href="">Electrical Installations</a></li>
+            	<li><a href="">High Voltage Reticulation</a></li>
+            	<li><a href="">PhotoVoltaic Systems</a></li>
+            	<li><a href="">Security Systems</a></li>
+            	<li><a href="">Airfield Lighting</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links d-flex">
+          <i class="bi bi-patch-check icon"></i>
+          <div>
+            <h4>Company Info.</h4>
+            <ul>
+            	<li><a href="about.html">About Us</a></li>
+            	<li><a href="">Mission & Vision</a></li>
+              	<li><a href="">Our team</a></li>
+              	<li><a href="">Equipment & Capabilities</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links d-flex">
+          <i class="bi bi-telephone icon"></i>
+          <div>
+            <h4>Contact & Legal</h4>
+            <ul>
+            	<li><a href="">Contact Us</a></li>
+            	<li><a href="">Careers</a></li>
+            	<li><a href="">Terms & Conditions</a></li>
+            	<li><a href="">Privacy Policy</a></li>
+            	<li><a href="">Sitemap</a></li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+          <h4>Follow Us</h4>
+          <div class="social-links d-flex">
+            <a href="#" class="twitter"><i class="bi bi-tiktok"></i></a>
+            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>LTC Engineering - Pty Ltd</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        A Cloudwise <a href="https://facebook.com/cloudwise777">Solution</a>
+      </div>
+    </div>
+
+  </footer>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/dist/boxicons.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.2.0/js/glightbox.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/prod.js"></script>
+</body>
+</html>
